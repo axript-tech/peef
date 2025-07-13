@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEEF | People Expertise and Excellence Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FDCB05',
+            secondary: '#0F4F28',
+            accent: '#4A7C17',
+            neutral: '#FAFAFA',
+            textmain: '#1A2A13',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neutral text-textmain font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="PEEF-LOGO.png" alt="PEEF Logo" class="h-10">
+        <h1 class="text-secondary font-bold text-lg">PEEF</h1>
+      </div>
+      <nav class="space-x-6 text-secondary font-semibold">
+        <a href="#" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#state" class="hover:text-primary">State of the Art</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-secondary text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Developing Skills for Excellence</h2>
+      <p class="text-lg mb-8">Empowering people through expertise, education, and innovation.</p>
+      <a href="#contact" class="bg-primary text-secondary font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
+        Get Involved
+      </a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-secondary mb-6">About Us</h3>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        The People Expertise and Excellence Foundation (PEEF) is dedicated to empowering individuals and institutions through professional training, strategic leadership development, and skill enhancement.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        We focus on fostering a culture of innovation and excellence by designing programs that address workforce gaps, strengthen public institutions, and deliver measurable impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- State of the Art -->
+  <section id="state" class="py-16 bg-neutral">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-secondary mb-6">State-of-the-Art Programs</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <h4 class="text-xl font-bold text-secondary mb-2">Smart Learning</h4>
+          <p class="text-gray-700">We use cutting-edge eLearning tools and methodologies to ensure inclusive and adaptive training programs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <h4 class="text-xl font-bold text-secondary mb-2">Leadership Incubator</h4>
+          <p class="text-gray-700">Our mentoring ecosystem grooms the next generation of public and private sector leaders.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <h4 class="text-xl font-bold text-secondary mb-2">Data-Driven Evaluation</h4>
+          <p class="text-gray-700">All our programs are backed by measurable outcomes, dashboards, and evidence-based analysis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-secondary mb-6">Contact Us</h3>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Full Name" class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+        <input type="email" placeholder="Email Address" class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+        <input type="text" placeholder="Subject" class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary md:col-span-2" required>
+        <textarea rows="5" placeholder="Your Message" class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary md:col-span-2" required></textarea>
+        <button type="submit" class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-accent transition md:col-span-2">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p class="mb-2 font-semibold">© 2025 PEEF. All Rights Reserved.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-primary">Privacy Policy</a>
+        <a href="#" class="hover:text-primary">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
